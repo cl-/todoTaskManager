@@ -1,0 +1,191 @@
+body {position: relative; margin: 0; padding: 0; }
+nav {
+	top: 40px;
+	height: 50px;	
+}
+
+nav a {
+	white-space: nowrap;
+	text-decoration: none;
+	margin: 0 0 2px 0; 
+	border-color: blue;
+	border-style: solid;
+	border-width: 2px;
+	padding: 5px 10px; 
+	background-color: #ACE;
+	font: bold 1em sans-serif;
+	text-align: center;
+	color: #024;
+	
+}
+nav a:hover {color: #fff;background-color: black;}
+
+.ApplicationHeader{
+	height 29px;	
+}
+
+
+section p {}
+section h3 {}
+/* Lookup psuedo classes, yes you can combine them.
+	 Order matters here. Experiment say with placing 
+	 a:visited last and see what happens. Rules are 
+	 applied in order, so the last one applying to an
+	 elements property wins.
+*/
+section a:link {
+	
+	color: grey;
+}
+section a:visited {
+	color: #BBC;
+}
+section a:link:hover {
+
+}
+section a:visited:hover {
+
+}
+
+/* Look up this selector, figure out which particular elements the style applies to */
+section>header>h1 {}
+
+
+code, pre {
+	color: #0f0; font: 110% monospace;
+	
+	font: 16px Verdana, sans-serif;
+}
+.container{
+	
+	position:absolute;
+	top: 80 px;
+	/*color: #f00;*/ /*removed Red font*/
+	/*border: solid #FFCC99;*/ /*removed Orange border font*/
+	border-width: 1px;
+	width: calc(100% - 2px);
+
+}
+
+#home_container, .container{
+	background-color:#F5F5F5;
+
+
+}
+html,body {}
+
+#add_task{ width: 240px; }
+
+#task_table_div{
+	width:70%;
+	height:100%;
+}
+
+
+.center, #task_table, #progressStats {
+		margin: 0 auto;
+}
+
+.centerDiv50pc {
+	width: 50%;
+	margin: 0 auto;
+}
+.centerDiv80pc {
+	width: 80%;
+	margin: 0 auto;
+}
+.centerLeftDiv50pc {
+	width: 250px;
+	margin: 0 auto;
+	/*margin-left: 5%;*/
+}
+.centerRightDiv50pc {
+	width: 250px;
+	margin: 0 auto;
+	/*margin-left: 5%;*/
+}
+
+.floatLeft{
+	float:left;
+}
+.floatClear{
+	clear: both;
+}
+
+.incrementProgress{
+	padding: 0;
+	border: none;
+	background: none;
+	margin: 0;
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+
+#modifyTask_container{
+	width:300px;
+}
+
+.bordered{
+	padding: 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 3px;
+}
+.tableBorder{
+	padding: 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.centerText{
+	text-align: center;
+}
+
+squareBlock, .squareBlock,
+.graySquareBlock, .redSquareBlock, .blueSquareBlock, .greenSquareBlock {
+	display: inline-block;
+	text-align: center;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	margin: 0px -3px 0px -3px;
+}/* top right bottom left*/
+.graySquareBlock{ background-color: #c0c0c0; }
+.redSquareBlock { background-color: red; }
+.blueSquareBlock{ background-color: blue; }
+.greenSquareBlock{ background-color: green; }
+
+.grayFont{ color: #c0c0c0; }
+.whiteFont{ color: white; }
+.redFont{ color: red; }
+.blueFont{ color: blue; }
+.greenFont{ color: green; }
+
+.margin-tb5{ margin-top: 5px; margin-bottom: 5px; }
+.margin-tb10{ margin-top: 10px; margin-bottom: 10px; }
+.margin-tb20{ margin-top: 20px; margin-bottom: 20px; }
+
+
+.margin-lr10{ margin-left: 10px; margin-right: 10px; }
+
+#task_table_div{min-width:1100px;}
+.taskTableColm{min-width:100px;}
+.taskTableColm2{min-width:200px;}
+.taskTableColm3{min-width:300px;}
+#noTaskMsg{width:600px;}
+
+
+#progressStats{width:900px;}
+#progressStats-rate{margin-left: 120px;}
+#progressStats-legend{margin-left: 450px;}
+
+/*
+centerDiv50pc: The Div requires a "width" for the centering margin to work as intended.
+floatClear: http://www.quirksmode.org/css/clearing.html*/
